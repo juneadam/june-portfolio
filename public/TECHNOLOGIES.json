@@ -1,0 +1,14 @@
+{
+  "data": [
+    { "Language": "Python" },
+    { "Language": "Flask" },
+    { "Language": "JavaScript" },
+    { "Language": "React" },
+    { "Language": "PostgreSQL" },
+    { "Language": "HTML" },
+    { "Language": "CSS" },
+    { "Language": "Bootstrap" },
+    { "Language": "Tailwind" },
+    { "Language": "SQLAlchemy" }
+  ]
+}
