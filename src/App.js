@@ -1,4 +1,5 @@
 import TechBtn from "./utils/TechBtn";
+import Accordion from "./utils/Accordion";
 import "./App.css";
 import { useState, useEffect } from "react";
 import axios from "axios";
@@ -35,22 +36,18 @@ function useTechs() {
 
   return {
     technologies,
-    techsFound
-  }
+    techsFound,
+  };
 }
 
 function App() {
-
-  const {
-    technologies,
-    techsFound    
-  } = useTechs();
+  const { technologies, techsFound } = useTechs();
 
   return (
     <div className="App">
-      <div className="technologies-hole">
+      <div className="technologies-hole flex">
         {technologies.length > 0 ? (
-          techsFound
+          <Accordion accordionData={["Technologies", techsFound]} />
         ) : (
           <p>No technologies found.</p>
         )}
