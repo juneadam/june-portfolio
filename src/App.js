@@ -3,6 +3,7 @@ import Accordion from "./utils/Accordion";
 import "./App.css";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import Navbar from "./utils/Navbar";
 
 function useTechs() {
   const [technologies, setTechnologies] = useState([]);
@@ -40,17 +41,36 @@ function useTechs() {
   };
 }
 
+function useNavbar() {
+  const [wide, setWide] = useState(false);
+
+  const wideOnClick = () => {
+    if (wide === false) {
+      setWide(true)
+    } else {
+      setWide(false)
+    }
+  }
+
+  return {wide, wideOnClick}
+
+}
+
 function App() {
   const { technologies, techsFound } = useTechs();
+  const {wide, wideOnClick} = useNavbar();
 
   return (
-    <div className="App">
-      <div className="technologies-hole flex">
-        {technologies.length > 0 ? (
-          <Accordion accordionData={["Technologies", techsFound]} />
-        ) : (
-          <p>No technologies found.</p>
-        )}
+    <div className="App flex flex-row">
+      <Navbar wide={wide} wideOnClick={wideOnClick} />
+      <div className="content">
+        <div className="technologies-hole">
+          {technologies.length > 0 ? (
+            <Accordion accordionData={["Technologies", techsFound]} />
+          ) : (
+            <p>No technologies found.</p>
+          )}
+          </div>
       </div>
     </div>
   );

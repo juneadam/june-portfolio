@@ -6,7 +6,7 @@ function Accordion(props) {
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <div className="accordion w-1/2 flex-1 justify-center cursor-pointer hover:shadow-hover-glow focus:shadow-focus-glow bg-emerald-200">
+    <div className="accordion justify-center cursor-pointer hover:shadow-hover-glow focus:shadow-focus-glow transition-[height] bg-emerald-200">
       <div
         className="accordion-title w-full after:content-['+'] content-between"
         onClick={() => setIsActive(!isActive)}
