@@ -1,4 +1,4 @@
-//component to create a vertical Navbar
+//component to create a vertical Navbar for desktop view
 
 import { Link } from "react-router-dom";
 import NavIcon from "./NavIcon";

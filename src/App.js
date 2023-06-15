@@ -64,22 +64,9 @@ function App() {
   const { technologies, techsFound } = useTechs();
   const { wide, wideOnMouse } = useNavbar();
 
-  return window.screen.width >= 769 ? (
+  return (
     <div className="App flex flex-row">
       <Navbar wide={wide} wideOnMouse={wideOnMouse} />
-      <Routes>
-        <Route
-          path="/"
-          element={<Home technologies={technologies} techsFound={techsFound} />}
-        />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/resume" element={<Resume />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-    </div>
-  ) : (
-    <div className="App flex flex-col-reverse">
-      <MobileNavbar />
       <Routes>
         <Route
           path="/"
