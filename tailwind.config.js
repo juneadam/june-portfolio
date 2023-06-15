@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       boxShadow: {
-        'hover-glow': '0 0 8px 4px rgba(56, 234, 237, 0.883)',
-        'focus-glow': '0 0 15px 10px rgb(56, 234, 237)'
+        'hover-glow': '0 0 10px 10px #ff00ffB3, 0 0 12px 16px #02ccfef2, 0 0 15px 18px #ffffff',
+        'focus-glow': '0 0 15px 10px rgba(56, 234, 237, 0.85)'
       }
     },
   },
