@@ -44,7 +44,7 @@ function useTechs() {
 function useNavbar() {
   const [wide, setWide] = useState(false);
 
-  const wideOnClick = () => {
+  const wideOnMouse = () => {
     if (wide === false) {
       setWide(true)
     } else {
@@ -52,17 +52,17 @@ function useNavbar() {
     }
   }
 
-  return {wide, wideOnClick}
+  return {wide, wideOnMouse}
 
 }
 
 function App() {
   const { technologies, techsFound } = useTechs();
-  const {wide, wideOnClick} = useNavbar();
+  const {wide, wideOnMouse} = useNavbar();
 
   return (
     <div className="App flex flex-row">
-      <Navbar wide={wide} wideOnClick={wideOnClick} />
+      <Navbar wide={wide} wideOnMouse={wideOnMouse} />
       <div className="content">
         <div className="technologies-hole">
           {technologies.length > 0 ? (

@@ -15,16 +15,11 @@ function Navbar(props) {
 
   return (
     <div
-      className={`navbar h-screen flex flex-col border align-items-center border-black transition-[width] ease-linear duration-450 ${barWidth}`}
+      className={`navbar h-screen flex flex-col justify-around content-center border border-black transition-[width] ease-linear duration-450 ${barWidth}`}
+      onMouseEnter={props.wideOnMouse}
+      onMouseLeave={props.wideOnMouse}
     >
-      <div className="expandIcon flex flex-row justify-content-end">
-        {!props.wide ? (
-          <button onClick={props.wideOnClick}>&gt;</button>
-        ) : (
-          <button onClick={props.wideOnClick}>X</button>
-        )}
-      </div>
-      <div className="nav-link justify-self-center">
+      <div className="nav-link">
         <button>Home</button>
       </div>
       <div>
