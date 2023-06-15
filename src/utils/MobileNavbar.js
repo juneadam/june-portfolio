@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import NavIcon from "./NavIcon";
+import MobileNavIcon from "./MobileNavIcon";
 
 function MobileNavbar(props) {
 
@@ -18,16 +18,16 @@ function MobileNavbar(props) {
       className={`navbar w-screen flex flex-row absolute bottom-0 justify-evenly text-center transition-[width] ease-linear duration-500`}
     >
       <Link to="/">
-        <NavIcon type="home" icon="fa-solid fa-house" hide={hide} />
+        <MobileNavIcon type="home" icon="fa-solid fa-house" hide={hide} />
       </Link>
       <Link to="/projects">
-        <NavIcon type="projects" icon="fa-solid fa-rocket" hide={hide} />
+        <MobileNavIcon type="projects" icon="fa-solid fa-rocket" hide={hide} />
       </Link>
       <Link to="/resume">
-        <NavIcon type="resume" icon="fa-solid fa-file-text" hide={hide} />
+        <MobileNavIcon type="resume" icon="fa-solid fa-file-text" hide={hide} />
       </Link>
       <Link to="/contact">
-        <NavIcon type="contact" icon="fa-solid fa-envelope" hide={hide} />
+        <MobileNavIcon type="contact" icon="fa-solid fa-envelope" hide={hide} />
       </Link>
     </div>
   );
