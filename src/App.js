@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import Navbar from "./utils/Navbar";
 
+
 function useTechs() {
   const [technologies, setTechnologies] = useState([]);
 
