@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-function useIcon() {
+function useIconFocus() {
   const [iconFocus, setIconFocus] = useState(false);
 
   const handleIconFocus = () => {
@@ -32,7 +32,7 @@ function useIcon() {
 }
 
 function MobileNavIcon(props) {
-  const { handleIconFocus, pushUp, textColor } = useIcon();
+  const { handleIconFocus, pushUp, textColor } = useIconFocus();
 
   return (
     <button

@@ -1,5 +1,5 @@
 import TechBtn from "./utils/TechBtn";
-import "./App.css";
+// import "./App.css";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import Navbar from "./utils/Navbar";

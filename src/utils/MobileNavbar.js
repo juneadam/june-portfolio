@@ -15,7 +15,7 @@ function MobileNavbar(props) {
 
   return (
     <div
-      className={`navbar w-screen flex flex-row absolute bottom-0 justify-evenly text-center transition-[width] ease-linear duration-500`}
+      className={`MobileNavbar h-24 bg-purple-june w-screen flex flex-row absolute bottom-0 justify-evenly align-middle text-center`}
     >
       <Link to="/">
         <MobileNavIcon type="home" icon="fa-solid fa-house" hide={hide} />
