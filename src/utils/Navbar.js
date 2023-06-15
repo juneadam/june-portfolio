@@ -2,6 +2,7 @@
 
 // import { useState } from "react";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 import NavIcon from "./NavIcon";
 
 function Navbar(props) {
@@ -28,10 +29,18 @@ function Navbar(props) {
       onMouseEnter={props.wideOnMouse}
       onMouseLeave={props.wideOnMouse}
     >
-      <NavIcon type="home" icon="fa-solid fa-house" hide={hide} />
-      <NavIcon type="projects" icon="fa-solid fa-rocket" hide={hide} />
-      <NavIcon type="resume" icon="fa-solid fa-file-text" hide={hide} />
-      <NavIcon type="contact" icon="fa-solid fa-envelope" hide={hide} />
+      <Link to="/">
+        <NavIcon type="home" icon="fa-solid fa-house" hide={hide} />
+      </Link>
+      <Link to="/projects">
+        <NavIcon type="projects" icon="fa-solid fa-rocket" hide={hide} />
+      </Link>
+      <Link to="/resume">
+        <NavIcon type="resume" icon="fa-solid fa-file-text" hide={hide} />
+      </Link>
+      <Link to="/contact">
+        <NavIcon type="contact" icon="fa-solid fa-envelope" hide={hide} />
+      </Link>
     </div>
   );
 }

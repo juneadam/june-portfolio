@@ -4,6 +4,11 @@ import "./App.css";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import Navbar from "./utils/Navbar";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import Projects from "./pages/Projects";
+import Resume from "./pages/Resume";
+import Contact from "./pages/Contact";
 
 
 function useTechs() {
@@ -64,6 +69,12 @@ function App() {
   return (
     <div className="App flex flex-row">
       <Navbar wide={wide} wideOnMouse={wideOnMouse} />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/resume" element={<Resume />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
       <div className="content">
         <div className="technologies-hole">
           {technologies.length > 0 ? (
