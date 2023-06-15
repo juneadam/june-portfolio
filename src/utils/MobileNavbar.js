@@ -1,15 +1,7 @@
-//component to create a vertical Navbar
-
 import { Link } from "react-router-dom";
 import NavIcon from "./NavIcon";
 
-function Navbar(props) {
-  let barWidth = "";
-  if (props.wide === false) {
-    barWidth = "w-1/6";
-  } else {
-    barWidth = "w-1/4";
-  }
+function MobileNavbar(props) {
 
   let hide = "";
   if (!props.wide) {
@@ -23,9 +15,7 @@ function Navbar(props) {
 
   return (
     <div
-      className={`navbar h-screen flex flex-col justify-evenly text-center transition-[width] ease-linear duration-500 ${barWidth}`}
-      onMouseEnter={props.wideOnMouse}
-      onMouseLeave={props.wideOnMouse}
+      className={`navbar w-screen flex flex-row absolute bottom-0 justify-evenly text-center transition-[width] ease-linear duration-500`}
     >
       <Link to="/">
         <NavIcon type="home" icon="fa-solid fa-house" hide={hide} />
@@ -43,4 +33,4 @@ function Navbar(props) {
   );
 }
 
-export default Navbar;
+export default MobileNavbar;

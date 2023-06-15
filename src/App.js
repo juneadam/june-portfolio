@@ -1,5 +1,4 @@
 import TechBtn from "./utils/TechBtn";
-import Accordion from "./utils/Accordion";
 import "./App.css";
 import { useState, useEffect } from "react";
 import axios from "axios";
@@ -9,7 +8,7 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Resume from "./pages/Resume";
 import Contact from "./pages/Contact";
-
+import MobileNavbar from "./utils/MobileNavbar";
 
 function useTechs() {
   const [technologies, setTechnologies] = useState([]);
@@ -52,38 +51,44 @@ function useNavbar() {
 
   const wideOnMouse = () => {
     if (wide === false) {
-      setWide(true)
+      setWide(true);
     } else {
-      setWide(false)
+      setWide(false);
     }
-  }
+  };
 
-  return {wide, wideOnMouse}
-
+  return { wide, wideOnMouse };
 }
 
 function App() {
   const { technologies, techsFound } = useTechs();
-  const {wide, wideOnMouse} = useNavbar();
+  const { wide, wideOnMouse } = useNavbar();
 
-  return (
+  return window.screen.width >= 769 ? (
     <div className="App flex flex-row">
       <Navbar wide={wide} wideOnMouse={wideOnMouse} />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route
+          path="/"
+          element={<Home technologies={technologies} techsFound={techsFound} />}
+        />
         <Route path="/projects" element={<Projects />} />
         <Route path="/resume" element={<Resume />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      <div className="content">
-        <div className="technologies-hole">
-          {technologies.length > 0 ? (
-            <Accordion accordionData={["Technologies", techsFound]} />
-          ) : (
-            <p>No technologies found.</p>
-          )}
-          </div>
-      </div>
+    </div>
+  ) : (
+    <div className="App flex flex-col-reverse">
+      <MobileNavbar />
+      <Routes>
+        <Route
+          path="/"
+          element={<Home technologies={technologies} techsFound={techsFound} />}
+        />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/resume" element={<Resume />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
     </div>
   );
 }
