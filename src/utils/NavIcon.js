@@ -37,7 +37,7 @@ function NavIcon(props) {
   return (
     <button
       key={props.type}
-      className="icon-hole px-1 rounded-2xl mx-auto transition-all hover:ease-in-out duration-450 hover:shadow-hover-glow hover:bg-pink-500/70 focus:shadow-focus-glow focus:bg-cyan-300/70"
+      className="icon-hole px-1 rounded-2xl mx-auto transition-all hover:ease-in-out duration-450 hover:shadow-hover-glow hover:bg-pink-500 focus:shadow-focus-glow focus:bg-cyan-300/70"
       onMouseEnter={handleIconHover}
       onMouseLeave={handleIconHover}
     >
