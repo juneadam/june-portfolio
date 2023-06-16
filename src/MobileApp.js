@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import MobileResume from "./pages/MobileResume";
-import Contact from "./pages/Contact";
+import MobileContact from "./pages/MobileContact";
 
 function MobileApp() {
     return (
@@ -16,7 +16,7 @@ function MobileApp() {
             />
             <Route path="/projects" element={<Projects />} />
             <Route path="/resume" element={<MobileResume />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/contact" element={<MobileContact />} />
           </Routes>
         </div>
       );

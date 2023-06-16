@@ -18,7 +18,7 @@ library.add(fab, faHouse, faEnvelope, faFileText, faRocket);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-window.screen.width >= 769
+((window.screen.width >= 769) && !(window.screen.width > 2 * window.screen.height))
   ? root.render(
       <React.StrictMode>
         <BrowserRouter>
