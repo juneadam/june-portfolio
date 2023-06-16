@@ -40,7 +40,7 @@ function Navbar(props) {
       <Link to="/contact">
         <NavIcon type="contact" icon="fa-solid fa-envelope" hide={hide} />
       </Link>
-      <div className="social-hole flex place-content-evenly self-center w-56">
+      <div className="social-hole flex place-content-evenly ">
         {/* self-center and w-56 make the social links static on stretch - do i like this better? 
         or is it more fun when they stretch with the bar? */}
         <a href="https://www.github.com/juneadam" target="_blank" rel="noreferrer">

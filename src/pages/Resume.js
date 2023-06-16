@@ -18,7 +18,7 @@ function Resume() {
     <div className="ResumeEmbed overflow-x-hidden w-10/12 h-screen flex flex-row justify-evenly">
       <iframe
         title="embedded-resume"
-        src="https://drive.google.com/file/d/1XyucUhuf59yvmm6zJoc_gYjdtE5GGWDc/preview"
+        src="https://drive.google.com/file/d/1ar8juYpGL5qp5n29QzuutDF2DYo78fX5/preview"
         width={width}
         height={height}
         allow="autoplay"
