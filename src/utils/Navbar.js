@@ -2,7 +2,7 @@
 
 import { Link } from "react-router-dom";
 import NavIcon from "./NavIcon";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Navbar(props) {
   let barWidth = "";
@@ -40,9 +40,17 @@ function Navbar(props) {
       <Link to="/contact">
         <NavIcon type="contact" icon="fa-solid fa-envelope" hide={hide} />
       </Link>
-      <div className="social-hole flex place-content-evenly">
-        <a href="https://www.github.com/juneadam" target="_blank"><FontAwesomeIcon icon="fa-brands fa-github" size="xl" /></a>
-        <a href="https://www.linkedin.com/in/june-balter" target="_blank"><FontAwesomeIcon icon="fa-brands fa-linkedin" size="xl" /></a>
+      <div className="social-hole flex place-content-evenly self-center w-56">
+        {/* self-center and w-56 make the social links static on stretch - do i like this better? 
+        or is it more fun when they stretch with the bar? */}
+        <a href="https://www.github.com/juneadam" target="_blank" rel="noreferrer">
+          <NavIcon type="github" icon="fa-brands fa-github" hide={hide} />
+          {/* <FontAwesomeIcon icon="fa-brands fa-github" size="xl" /> */}
+        </a>
+        <a href="https://www.linkedin.com/in/june-balter" target="_blank" rel="noreferrer">
+        <NavIcon type="linkedin" icon="fa-brands fa-linkedin" hide={hide} />
+          {/* <FontAwesomeIcon icon="fa-brands fa-linkedin" size="xl" /> */}
+        </a>
       </div>
     </div>
   );

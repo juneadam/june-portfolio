@@ -8,8 +8,8 @@ function Resume() {
     width = "900";
   }
 
-  if (window.screen.availHeight <=2000) {
-    height = window.screen.availHeight
+  if (window.screen.availHeight <= 2000) {
+    height = window.screen.availHeight;
   } else {
     height = "2000";
   }
@@ -17,6 +17,7 @@ function Resume() {
   return (
     <div className="ResumeEmbed overflow-x-hidden w-10/12 h-screen flex flex-row justify-evenly">
       <iframe
+        title="embedded-resume"
         src="https://drive.google.com/file/d/1XyucUhuf59yvmm6zJoc_gYjdtE5GGWDc/preview"
         width={width}
         height={height}

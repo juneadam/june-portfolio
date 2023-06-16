@@ -11,7 +11,7 @@ function useScreenSize() {
     };
 
     updateResolution();
-  }, [window.screen.height, window.screen.width]);
+  }, []);
 
   return { screenWidth, screenHeight };
 }

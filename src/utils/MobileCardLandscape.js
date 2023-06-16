@@ -4,7 +4,7 @@ function MobileCardLandscape(props) {
 
     <div className="MobileCardLandscape card-wrapper grid grid-rows-3 grid-cols-2 max-w-[50%] max-h-[50%] rounded-md border border-black">
       <div className="card-image-div row-span-3 col-span-1 overflow-hidden rounded-l-md flex place-content-center items-center">
-        <img className="object-cover" src={props.image} alt="card-image"></img>
+        <img className="object-cover" src={props.image} alt="card-portrait"></img>
       </div>
       <div className="card-content row-span-3 px-6 h-fit">
         <h1 className="text-2xl text-right font-semibold py-4">
