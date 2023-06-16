@@ -1,0 +1,26 @@
+.Projects {
+  perspective: 1000px;
+}
+
+.carousel {
+  transform-style: preserve-3d;
+}
+
+.carousel__cell:nth-child(1) {
+  transform: rotateY(0deg) translateZ(216.5px);
+}
+.carousel__cell:nth-child(2) {
+  transform: rotateY(60deg) translateZ(216.5px);
+}
+.carousel__cell:nth-child(3) {
+  transform: rotateY(120deg) translateZ(216.5px);
+}
+.carousel__cell:nth-child(4) {
+  transform: rotateY(180deg) translateZ(216.5px);
+}
+.carousel__cell:nth-child(5) {
+  transform: rotateY(240deg) translateZ(216.5px);
+}
+.carousel__cell:nth-child(6) {
+  transform: rotateY(300deg) translateZ(216.5px);
+}

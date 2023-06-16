@@ -1,7 +1,11 @@
+import "./Projects.css"
+import DDDCarousel from "../utils/DDDCarousel";
+
+
 function Projects() {
     return (
-        <div>
-            Goodbye World
+        <div className="Projects relative w-[100%] h-[100%] grid place-content-center">
+            <DDDCarousel />
         </div>
     )
 }

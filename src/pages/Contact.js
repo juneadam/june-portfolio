@@ -2,7 +2,7 @@ import Card from "../utils/Card";
 
 function Contact() {
   return (
-    <div className="flex flex-auto justify-center items-center">
+    <div className="Contact flex flex-auto justify-center items-center">
       <Card
         image="/aiony-haust-3TLl_97HNJo-unsplash.jpg"
         title="June Balter"
