@@ -5,7 +5,7 @@ import App from "./App";
 import MobileApp from "./MobileApp";
 import reportWebVitals from "./reportWebVitals";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { fab } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin, faGithub, fab } from "@fortawesome/free-brands-svg-icons";
 import {
   faHouse,
   faEnvelope,
@@ -14,11 +14,19 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { BrowserRouter } from "react-router-dom";
 
-library.add(fab, faHouse, faEnvelope, faFileText, faRocket);
+library.add(
+  fab,
+  faHouse,
+  faEnvelope,
+  faFileText,
+  faRocket,
+  faGithub,
+  faLinkedin
+);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-((window.screen.width >= 769) && !(window.screen.width > 2 * window.screen.height))
+window.screen.width >= 769 && !(window.screen.width > 2 * window.screen.height)
   ? root.render(
       <React.StrictMode>
         <BrowserRouter>

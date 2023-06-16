@@ -2,6 +2,7 @@
 
 import { Link } from "react-router-dom";
 import NavIcon from "./NavIcon";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Navbar(props) {
   let barWidth = "";
@@ -39,6 +40,10 @@ function Navbar(props) {
       <Link to="/contact">
         <NavIcon type="contact" icon="fa-solid fa-envelope" hide={hide} />
       </Link>
+      <div className="social-hole flex place-content-evenly">
+        <a href="https://www.github.com/juneadam" target="_blank"><FontAwesomeIcon icon="fa-brands fa-github" size="xl" /></a>
+        <a href="https://www.linkedin.com/in/june-balter" target="_blank"><FontAwesomeIcon icon="fa-brands fa-linkedin" size="xl" /></a>
+      </div>
     </div>
   );
 }
