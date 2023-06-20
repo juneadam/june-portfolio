@@ -8,13 +8,13 @@ function Card(props) {
           alt="card-portrait"
         ></img>
       </div>
-      <div className="card-content px-6 h-fit bg-slate-400">
+      <div className="card-content px-6 h-1/4 bg-orange-200">
         <h1 className="text-2xl text-right font-semibold py-4">
           {props.title}
         </h1>
         <p className="py-1 text-xl text-right">{props.content}</p>
       </div>
-      <div className="card-links px-6 pb-3 h-1/4 bg-slate-400 flex flex-wrap flex-col justify-around items-end rounded-b-md">
+      <div className="card-links px-6 pb-3 h-1/4 bg-orange-200 flex flex-wrap flex-col justify-around items-end rounded-b-md">
         <button>a</button>
         <button>b</button>
         <button>c</button>
