@@ -11,6 +11,7 @@ import {
   faEnvelope,
   faFileText,
   faRocket,
+  faCircleInfo
 } from "@fortawesome/free-solid-svg-icons";
 import { BrowserRouter } from "react-router-dom";
 
@@ -20,6 +21,7 @@ library.add(
   faEnvelope,
   faFileText,
   faRocket,
+  faCircleInfo,
   faGithub,
   faLinkedin
 );

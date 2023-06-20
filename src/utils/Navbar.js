@@ -29,27 +29,28 @@ function Navbar(props) {
       onMouseLeave={props.wideOnMouse}
     >
       <Link to="/">
-        <NavIcon type="home" icon="fa-solid fa-house" hide={hide} />
+        <NavIcon type="home" icon="fa-solid fa-house" size="2xl" textSize="text-xl" hide={hide} />
+      </Link>
+      <Link to="/about">
+        <NavIcon type="about" icon="fa-solid fa-circle-info" size="2xl" textSize="text-xl" hide={hide} />
       </Link>
       <Link to="/projects">
-        <NavIcon type="projects" icon="fa-solid fa-rocket" hide={hide} />
+        <NavIcon type="projects" icon="fa-solid fa-rocket" size="2xl" textSize="text-xl" hide={hide} />
       </Link>
       <Link to="/resume">
-        <NavIcon type="resume" icon="fa-solid fa-file-text" hide={hide} />
+        <NavIcon type="resume" icon="fa-solid fa-file-text" size="2xl" textSize="text-xl" hide={hide} />
       </Link>
       <Link to="/contact">
-        <NavIcon type="contact" icon="fa-solid fa-envelope" hide={hide} />
+        <NavIcon type="contact" icon="fa-solid fa-envelope" size="2xl" textSize="text-xl" hide={hide} />
       </Link>
       <div className="social-hole flex place-content-evenly ">
         {/* self-center and w-56 make the social links static on stretch - do i like this better? 
         or is it more fun when they stretch with the bar? */}
         <a href="https://www.github.com/juneadam" target="_blank" rel="noreferrer">
-          <NavIcon type="github" icon="fa-brands fa-github" hide={hide} />
-          {/* <FontAwesomeIcon icon="fa-brands fa-github" size="xl" /> */}
+          <NavIcon type="github" icon="fa-brands fa-github" size="xl" textSize="text-md" hide={hide} />
         </a>
         <a href="https://www.linkedin.com/in/june-balter" target="_blank" rel="noreferrer">
-        <NavIcon type="linkedin" icon="fa-brands fa-linkedin" hide={hide} />
-          {/* <FontAwesomeIcon icon="fa-brands fa-linkedin" size="xl" /> */}
+        <NavIcon type="linkedin" icon="fa-brands fa-linkedin" size="xl" textSize="text-md" hide={hide} />
         </a>
       </div>
     </div>

@@ -67,11 +67,11 @@ function NavIcon(props) {
       <FontAwesomeIcon
         className={`p-1 pt-3 z-10 transition-all ease-in-out duration-450 ${pushUp}`}
         icon={props.icon}
-        size="2xl"
+        size={props.size}
         style={{ color: "#aae3ff" }}
       />
       <div
-        className={`nav-text z-0 -translate-y-1.5 transition-all ease-linear font-semibold uppercase text-xl ${textColor} ${textColorFocus} ${hide}`}
+        className={`nav-text z-0 -translate-y-1.5 transition-all ease-linear font-semibold uppercase ${props.textSize} ${textColor} ${textColorFocus} ${hide}`}
       >
         {props.type}
       </div>

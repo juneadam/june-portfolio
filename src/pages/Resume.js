@@ -15,7 +15,7 @@ function Resume() {
   }
 
   return (
-    <div className="Resume overflow-hidden w-10/12 h-screen flex flex-row justify-evenly">
+    <div className="Resume overflow-hidden w-screen h-screen flex flex-row justify-evenly">
       <iframe
         title="embedded-resume"
         src="https://drive.google.com/file/d/1ar8juYpGL5qp5n29QzuutDF2DYo78fX5/preview"

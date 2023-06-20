@@ -1,16 +1,13 @@
 import Accordion from "../utils/Accordion";
+import Portrait from "../utils/Portrait";
 
 function Home(props) {
   return (
-    <div className="content">
-      <div>Hello World</div>
-      {/* <div className="technologies-hole">
-        {props.technologies.length > 0 ? (
-          <Accordion accordionData={["Technologies", props.techsFound]} />
-        ) : (
-          <p>No technologies found.</p>
-        )}
-      </div> */}
+    <div className="content w-screen h-screen grid grid-cols-3 grid-rows-2 place-items-center">
+      <div className="home-picture-hole col-span-2 row-span-1"><Portrait image="aiony-haust-3TLl_97HNJo-unsplash.jpg" /></div>
+      <div className="top-right-corner min-w-max min-h-max col-span-1 row-span-1">corner</div>
+      <div className="bottom-left-corner min-w-max min-h-max col-span-1 row-span-1">corner</div>
+      <div className="home-blurb-hole min-w-max min-h-max col-span-2 row-span-1">blurb</div>
     </div>
   );
 }
