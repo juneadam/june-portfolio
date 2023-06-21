@@ -2,6 +2,7 @@
 
 import { Link } from "react-router-dom";
 import NavIcon from "./NavIcon";
+import "./Navbar.css";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Navbar(props) {
@@ -24,7 +25,7 @@ function Navbar(props) {
 
   return (
     <div
-      className={`navbar h-screen flex flex-col justify-evenly text-center transition-[width] ease-linear duration-500 ${barWidth}`}
+      className={`Navbar h-screen flex flex-col justify-evenly text-center transition-[width] ease-linear duration-500 ${barWidth}`}
       onMouseEnter={props.wideOnMouse}
       onMouseLeave={props.wideOnMouse}
     >

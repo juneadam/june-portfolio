@@ -1,5 +1,4 @@
-.Projects {
-  perspective: 1000px;
+.About {
   animation: fadeIn ease-in-out 2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;

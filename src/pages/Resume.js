@@ -1,3 +1,5 @@
+import "./Resume.css"
+
 function Resume() {
   let width = "";
   let height = "";

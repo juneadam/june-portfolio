@@ -1,4 +1,5 @@
 import Card from "../utils/Card";
+import "./Contact.css"
 
 function Contact() {
   return (
