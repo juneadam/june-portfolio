@@ -1,14 +1,17 @@
 import Card from "./Card";
 import "./DDDCarouselCell.css";
 
-function DDDCarouselCell(props) {
-  <div className="carousel_cell absolute w-[270px] my-10 mx-20">
+function DDDCarouCell(props) {
+
+  return (
+  <div className="carouselCell absolute max-w-[360px] my-14">
     <Card
       image={props.image}
       title={props.title}
       content={props.content}
     />
-  </div>;
+  </div>
+  );
 }
 
-export default DDDCarouselCell;
+export default DDDCarouCell;
