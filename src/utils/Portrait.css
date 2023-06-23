@@ -1,0 +1,16 @@
+.Portrait {
+    opacity: 0;
+    animation-delay: 6s;
+    animation: fadeInPortrait ease-in-out 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes fadeInPortrait {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
