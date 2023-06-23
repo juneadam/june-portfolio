@@ -17,10 +17,27 @@
   stroke-dasharray: 100;
   stroke-dashoffset: 100;
   stroke-linecap:round;
-  animation: dashIn 10s ease-in-out infinite;
+  animation: dashIn 8s ease-in-out infinite;
 }
 
 @keyframes dashIn {
+  50% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: -100;
+  }
+}
+
+.delay-line {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  stroke-linecap:round;
+  animation: dashInDelay 8s ease-in-out infinite;
+  animation-delay: 550ms;
+}
+
+@keyframes dashInDelay {
   50% {
     stroke-dashoffset: 0;
   }

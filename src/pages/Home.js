@@ -21,6 +21,15 @@ function Home(props) {
       <div className="top-right-left col-span-2 grid justify-items-center place-items-center">
         <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
           <line
+            className="delay-line"
+            x1="50"
+            y1="15"
+            x2="50"
+            y2="80"
+            stroke="rgb(217 249 157)"
+            strokeWidth="1"
+          />
+          <line
             className="animated-line"
             x1="60"
             y1="5"
@@ -29,6 +38,15 @@ function Home(props) {
             stroke="rgb(217 249 157)"
             strokeWidth="2"
           />
+          <line
+            className="delay-line"
+            x1="70"
+            y1="15"
+            x2="70"
+            y2="80"
+            stroke="rgb(217 249 157)"
+            strokeWidth="1"
+          />
         </svg>
       </div>
 
@@ -36,22 +54,38 @@ function Home(props) {
 
       <div className="bottom-left-corner col-span-3 row-span-1 grid justify-items-center place-items-center">
         <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <line
+            className="delay-line"
+            x1="50"
+            y1="15"
+            x2="50"
+            y2="80"
+            stroke="rgb(217 249 157)"
+            strokeWidth="1"
+          />
           <line
             className="animated-line"
-            x1="50"
+            x1="60"
             y1="5"
-            x2="50"
+            x2="60"
             y2="90"
             stroke="rgb(217 249 157)"
             strokeWidth="2"
+          />
+          <line
+            className="delay-line"
+            x1="70"
+            y1="15"
+            x2="70"
+            y2="80"
+            stroke="rgb(217 249 157)"
+            strokeWidth="1"
           />
         </svg>
       </div>
       <div className="col-span-1"></div>
       <div className="home-blurb-hole grid max-h-full col-span-8 row-span-1 text-justified">
-        <Blurb
-          techsFound={props.techsFound}
-        />
+        <Blurb techsFound={props.techsFound} />
       </div>
     </div>
   );
