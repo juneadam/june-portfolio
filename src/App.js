@@ -18,26 +18,26 @@ function useTechs() {
       try {
         const response = await axios.get("TECHNOLOGIES.json");
         const technologiesFetched = response.data.data;
-        // console.log(technologiesFetched);
+        console.log(technologiesFetched);
         const shuffledTechnologies = [...technologiesFetched].sort(
           () => Math.random() - 0.5
         );
         console.log(shuffledTechnologies);
         setTechnologies(shuffledTechnologies);
-        // console.log(technologies);
+        console.log(technologies);
       } catch (error) {
         console.error("Error fetching technologies:", error);
       }
     };
 
     fetchTechnologies();
-    // console.log(technologies);
+    console.log(technologies);
   }, []);
 
   const techsFound = [];
   for (const obj of technologies) {
     // console.log(`technologies key: ${obj["Language"]}`);
-    techsFound.push(<TechBtn language={obj["Language"]} />);
+    techsFound.push(<TechBtn key={obj["Language"]} language={obj["Language"]} />);
   }
 
   return {
