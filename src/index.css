@@ -8,4 +8,9 @@
 
 body {
     background-color: #583388;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Bitter', serif;
 }

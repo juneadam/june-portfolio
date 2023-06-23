@@ -1,0 +1,7 @@
+.Blurb {
+    scrollbar-width: thin;
+}
+
+.Blurb::-webkit-scrollbar-track{
+    width: 5px;
+}
