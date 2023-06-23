@@ -16,16 +16,16 @@ function Home(props) {
         </h2>
       </div>
       <div className="home-portrait-hole col-span-4 row-span-1 grid justify-items-center place-items-center">
-        <Portrait image="aiony-haust-3TLl_97HNJo-unsplash.jpg" />
+        <Portrait image="june3.jpg" />
       </div>
       <div className="top-right-left col-span-2 grid justify-items-center place-items-center">
         <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
           <line
             className="animated-line"
             x1="60"
-            y1="0"
+            y1="5"
             x2="60"
-            y2="100"
+            y2="90"
             stroke="rgb(217 249 157)"
             strokeWidth="2"
           />
@@ -38,10 +38,10 @@ function Home(props) {
         <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
           <line
             className="animated-line"
-            x1="40"
-            y1="0"
-            x2="40"
-            y2="100"
+            x1="50"
+            y1="5"
+            x2="50"
+            y2="90"
             stroke="rgb(217 249 157)"
             strokeWidth="2"
           />

@@ -1,25 +1,49 @@
-.Blurb {
-    scrollbar-width: thin;
+/* .Blurb {
+  scrollbar-width: thin;
 }
 
-.Blurb::-webkit-scrollbar-track{
-    width: 5px;
+.Blurb::-webkit-scrollbar-track {
+  width: 5px;
+} */
+
+/* .Blurb {
+  opacity: 0;
+  animation: fadeInBlurb ease-in-out 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+  text-wrap: balance;
 }
 
-.Blurb {
+@keyframes fadeInBlurb {
+  0% {
     opacity: 0;
-    animation: fadeInBlurb ease-in-out 2s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    animation-delay: 2s;
-    text-wrap: balance;
   }
-  
-  @keyframes fadeInBlurb {
-    0% {
-      opacity: 0;
+  100% {
+    opacity: 1;
+  }
+} */
+
+.blurb-glow:hover {
+    cursor:pointer;
+    animation: blurbGlow ease-in 4s;
+    animation-iteration-count: infinite;
+    /* animation-fill-mode: i; */
+}
+
+@keyframes blurbGlow {
+    0% {box-shadow: none}
+    15% {
+        box-shadow: 0 0 5px 5px #ec4899e6, 0 0 8px 12px #ff00ffB3, 0 0 14px 10px #02ccfe, 0 0 18px 4px #ffffff, inset 0 0 5px 5px #ec4899e6;
+    }
+    25% {
+        box-shadow: 0 0 2px 5px #ec4899e6, 0 0 4px 8px #ff00ffB3, 0 0 5px 14px #02ccfe, 0 0 5px 18px #ffffff, inset 0 0 5px 5px #ec4899e6;
+    }
+    75% {
+        box-shadow: 0 0 5px 5px #ec4899e6, 0 0 8px 12px #ff00ffB3, 0 0 14px 10px #02ccfe, 0 0 18px 4px #ffffff, inset 0 0 5px 5px #ec4899e6;
     }
     100% {
-      opacity: 1;
+        box-shadow: none;
     }
-  }
+}
+
