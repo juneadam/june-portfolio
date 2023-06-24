@@ -1,4 +1,4 @@
-.Portrait {
+/* .Portrait {
     opacity: 0;
     animation-delay: 6s;
     animation: fadeInPortrait ease-in-out 2s;
@@ -13,15 +13,39 @@
     100% {
       opacity: 1;
     }
-  }
+  } */
 
 .Portrait img {
-    filter:saturate(4)
+    filter:saturate(0);
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
 }
 
 .Portrait img:hover {
-    filter:saturate(0);
     cursor: pointer;
-    transition-duration: 1s;
+    filter:saturate(100);
+    transition-duration: 30s;
     transition-timing-function:ease-in-out ;
+}
+
+.shadow-ani {
+    box-shadow: 5px 5px 10px black;
+}
+
+.shadow-ani:hover {
+    animation: longShadow ease-in-out 30s;
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
+}
+
+@keyframes longShadow {
+    0% {
+        box-shadow: 5px 5px 10px black
+    }
+    60% {
+        box-shadow: 15px 40px 35px grey;
+    }
+    100% {
+        box-shadow: 30px 90x 60px red;
+    }
 }
