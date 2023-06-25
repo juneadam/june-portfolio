@@ -21,7 +21,7 @@ function Card(props) {
     ? buttonArray.push(
         <a
           key={props.title + props.deploy}
-          href={props.title}
+          href={props.deploy}
           target="_blank"
           rel="noreferrer"
           className="transition-all duration-300 hover:scale-125 hover:text-carousel-toggle"

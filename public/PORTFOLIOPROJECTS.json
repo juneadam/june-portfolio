@@ -22,7 +22,7 @@
       "content": "A very familiar looking encyclopedia of (mostly nonfictional) birds. A collaboration with the fabulous @bethanylynn (check out her Github)!",
       "github": "https://github.com/juneadam/bird-app",
       "githubIcon": "fa-brands fa-github",
-      "deploy": "",
+      "deploy": "http://bird-dex.fly.dev/",
       "deployIcon": "fa-solid fa-kiwi-bird",
       "demo": "",
       "demoIcon": "",
