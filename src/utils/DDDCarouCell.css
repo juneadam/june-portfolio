@@ -20,9 +20,9 @@
     }
   }
 
-  @media (max-height: 700px) {
+  @media (max-height: 768px) {
     .rv0 .card-wrapper:hover {
-      transform: none;
+      transform: scale(1.5);
     }
   }
 

@@ -39,21 +39,29 @@ library.add(
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-window.screen.width >= 769 && !(window.screen.width > 2 * window.screen.height)
-  ? root.render(
-      <React.StrictMode>
-        <BrowserRouter>
-          <App />
-        </BrowserRouter>
-      </React.StrictMode>
-    )
-  : root.render(
-      <React.StrictMode>
-        <BrowserRouter>
-          <MobileApp />
-        </BrowserRouter>
-      </React.StrictMode>
-    );
+root.render(
+  <React.StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>
+)
+
+// window.screen.width >= 769 && !(window.screen.width > 2 * window.screen.height)
+//   ? root.render(
+//       <React.StrictMode>
+//         <BrowserRouter>
+//           <App />
+//         </BrowserRouter>
+//       </React.StrictMode>
+//     )
+//   : root.render(
+//       <React.StrictMode>
+//         <BrowserRouter>
+//           <MobileApp />
+//         </BrowserRouter>
+//       </React.StrictMode>
+//     );
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
