@@ -8,7 +8,7 @@ function Contact() {
         key="contactCard"
         image="june.jpg"
         title="June Balter"
-        content="Currently available for work. Please reach out with any questions about availability for work and rates."
+        content="Currently available for work. Please reach out with any questions about availability and rates."
         github="https://github.com/juneadam"
         githubIcon="fa-brands fa-github"
         linkedin="https://linkedin.com/in/june-balter"
