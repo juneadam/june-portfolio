@@ -77,6 +77,9 @@ function DDDCarousel() {
               deployIcon={project.deployIcon}
               demo={project.demo}
               demoIcon={project.demoIcon}
+              etc={project.etc}
+              etcLink={project.etcLink}
+              etcIcon={project.etcIcon}
             />
           );
         })}

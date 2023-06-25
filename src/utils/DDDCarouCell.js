@@ -73,6 +73,9 @@ function DDDCarouCell(props) {
         deployIcon={props.deployIcon}
         demo={props.demo}
         demoIcon={props.demoIcon}
+        etc={props.etc}
+        etcLink={props.etcLink}
+        etcIcon={props.etcIcon}
       />
     </div>
   );

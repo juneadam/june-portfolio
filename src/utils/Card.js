@@ -13,7 +13,9 @@ function Card(props) {
 
   let buttonArray = [];
 
-  console.log(`deploy : ${props.deploy} github : ${props.github} demo : ${props.deploy}`)
+  console.log(
+    `deploy : ${props.deploy} github : ${props.github} demo : ${props.deploy}`
+  );
 
   props.deploy
     ? buttonArray.push(
@@ -52,6 +54,21 @@ function Card(props) {
         >
           <button>
             <FontAwesomeIcon icon={props.demoIcon} /> Demo Video
+          </button>
+        </a>
+      )
+    : void 0;
+
+  props.etc
+    ? buttonArray.push(
+        <a
+          href={props.etcLink}
+          target="_blank"
+          className="transition-all duration-300 hover:scale-125 hover:text-carousel-toggle"
+        >
+          <button>
+            <FontAwesomeIcon icon={props.etcIcon} />
+            {props.etc}
           </button>
         </a>
       )
