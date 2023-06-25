@@ -14,7 +14,7 @@ function useRangeValue(cellIndex, selectedIndex, arrayLength) {
   } else if (cI < 0) {
     cI = cI + arrayLength;
   }
-  
+
   let faceIndex = selectedIndex; //the index of the front-facing card, monitored in state
   if (faceIndex >= arrayLength) {
     faceIndex = faceIndex - arrayLength;
@@ -60,9 +60,19 @@ function DDDCarouCell(props) {
   return (
     <div
       id={props.cellIndex}
-      className={`carouselCell cI${cI} rv${rangeValue} absolute max-w-[360px] my-14`}
+      className={`carouselCell cI${cI} rv${rangeValue} absolute my-14`}
     >
-      <Card image={props.image} title={props.title} content={props.content} />
+      <Card
+        image={props.image}
+        title={props.title}
+        content={props.content}
+        github={props.github}
+        githubIcon={props.githubIcon}
+        deploy={props.deploy}
+        deployIcon={props.deployIcon}
+        demo={props.demo}
+        demoIcon={props.demoIcon}
+      />
     </div>
   );
 }

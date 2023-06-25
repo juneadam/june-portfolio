@@ -2,11 +2,15 @@
   "data": [
     {
       "key": 0,
-      "image": "https://i.imgur.com/J1ZyURF.png",
+      "image": "https://i.imgur.com/GCL1CjC.png",
       "title": "Poetry Toolkit",
-      "content": "content",
+      "content": "Tools for inspiring poets! Built with Python, JavaScript, HTML, CSS, PostgreSQL, React, Flask, Jinja2, SQLAlchemy, Bootstrap, and using the PoetryDB API",
       "github": "https://www.github.com/juneadam/poetry-app",
-      "deploy": "http://3.88.39.80/"
+      "githubIcon": "fa-brands fa-github",
+      "deploy": "http://3.88.39.80/",
+      "deployIcon": "fa-solid fa-pen",
+      "demo": "https://youtu.be/WwlgrRZlsmM",
+      "demoIcon": "fa-brands fa-youtube"
     },
     {
       "key": 1,

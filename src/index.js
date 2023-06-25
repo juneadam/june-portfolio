@@ -5,7 +5,7 @@ import App from "./App";
 import MobileApp from "./MobileApp";
 // import reportWebVitals from "./reportWebVitals";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faLinkedin, faGithub, fab } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin, faGithub, faYoutube, fab } from "@fortawesome/free-brands-svg-icons";
 import {
   faHouse,
   faEnvelope,
@@ -14,6 +14,7 @@ import {
   faCircleInfo,
   faCircleRight,
   faCircleLeft,
+  faPen
 } from "@fortawesome/free-solid-svg-icons";
 import { BrowserRouter } from "react-router-dom";
 
@@ -25,9 +26,11 @@ library.add(
   faRocket,
   faCircleInfo,
   faCircleRight,
-  faCircleLeft,
+  faCircleLeft,  
+  faPen,
   faGithub,
-  faLinkedin
+  faLinkedin,
+  faYoutube
 );
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

@@ -1,6 +1,9 @@
+.rv0 .card-wrapper:hover {
+    transform: scale(1.4)
+}
+
 .rv0 .card-wrapper .shader {
-  opacity: 0.75;
-  background: linear-gradient(45deg, #00000000, #ffffff88);
+    visibility: hidden;
 }
 
 .rv0 .card-wrapper .select-glow {
@@ -24,6 +27,7 @@
   }
   100% {
     opacity: 0;
+    visibility: hidden;
   }
 }
 

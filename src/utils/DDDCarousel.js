@@ -71,6 +71,12 @@ function DDDCarousel() {
               image={project.image}
               title={project.title}
               content={project.content}
+              github={project.github}
+              githubIcon={project.githubIcon}
+              deploy={project.deploy}
+              deployIcon={project.deployIcon}
+              demo={project.demo}
+              demoIcon={project.demoIcon}
             />
           );
         })}
