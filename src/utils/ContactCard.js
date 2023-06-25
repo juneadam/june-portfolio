@@ -98,7 +98,7 @@ function ContactCard(props) {
           alt="card-portrait"
         ></img>
       </div>
-      <div className="card-content border-y px-6 pb-6 min-h-fit h-1/4 border-black bg-lime-200/90">
+      <div className="card-content border-y px-6 pb-6 min-h-fit h-1/4 bg-lime-200/90">
         <h1 className="text-2xl 2xl:text-4xl text-right font-semibold py-1 lg:py-4">
           {props.title}
         </h1>

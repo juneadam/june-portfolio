@@ -26,9 +26,9 @@ function Navbar(props) {
       <Link to="/">
         <NavIcon type="home" icon="fa-solid fa-house" size="2xl" textSize="text-xl" hide={hide} />
       </Link>
-      <Link to="/about">
+      {/* <Link to="/about">
         <NavIcon type="about" icon="fa-solid fa-circle-info" size="2xl" textSize="text-xl" hide={hide} />
-      </Link>
+      </Link> */}
       <Link to="/projects">
         <NavIcon type="projects" icon="fa-solid fa-rocket" size="2xl" textSize="text-xl" hide={hide} />
       </Link>
