@@ -2,11 +2,6 @@
   perspective: 1000px;
 }
 
-@media (max-width: 768px) {
-  .Projects .carousel {
-  transform: scale(.5)  }
-}
-
 .carousel-bounce {
   animation: enterBottom ease-in-out 1.5s;
   animation-iteration-count: 1;

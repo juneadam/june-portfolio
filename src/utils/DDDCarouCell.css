@@ -1,3 +1,30 @@
+@media (max-width: 768px), (max-height: 500px) {
+  .carousel {
+  scale: .5;  }
+
+  .prev {
+right: 12rem;
+scale: 1.5;
+  } 
+  .next {
+  right: -14rem;  
+  scale:1.5;
+  }
+}
+
+@media (max-width: 500px) {
+  .prev {
+    top: -18rem;
+    right: 4rem;
+    scale: 1.5;
+  }
+  .next {
+    top: -18rem;
+    right: -5rem;
+    scale: 1.5;
+  }
+}
+
 .rv0 .card-wrapper:hover {
   transform: scale(1.4);
 }
