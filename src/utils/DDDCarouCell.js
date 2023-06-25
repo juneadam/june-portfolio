@@ -21,7 +21,6 @@ function useRangeValue(cellIndex, selectedIndex, arrayLength) {
   } else if (faceIndex < 0) {
     faceIndex = faceIndex + arrayLength;
   }
-  console.log(`faceIndex: ${faceIndex}`);
   let rangeValue = 99; //the value (+ or -) from 0 - arrayLength, tracking a particular face
 
   if (cI == faceIndex) {

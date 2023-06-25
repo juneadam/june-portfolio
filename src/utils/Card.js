@@ -13,9 +13,9 @@ function Card(props) {
 
   let buttonArray = [];
 
-  console.log(
-    `deploy : ${props.deploy} github : ${props.github} demo : ${props.deploy}`
-  );
+  // console.log(
+  //   `deploy : ${props.deploy} github : ${props.github} demo : ${props.deploy}`
+  // );
 
   props.deploy
     ? buttonArray.push(
