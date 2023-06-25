@@ -84,7 +84,7 @@ function Home(props) {
         </svg>
       </div>
       <div className="md:col-span-1"></div>
-      <div className="home-blurb-hole grid max-h-full md:col-span-8 col-span-12 row-span-1 text-justified">
+      <div className="home-blurb-hole grid z-40 max-h-full md:col-span-8 col-span-12 row-span-1 text-justified">
         <Blurb techsFound={props.techsFound} />
       </div>
     </div>
