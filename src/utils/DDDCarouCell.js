@@ -56,13 +56,15 @@ function DDDCarouCell(props) {
 
   useEffect(() => {});
 
+  console.log(props.cellIndex)
+
   return (
     <div
       id={props.cellIndex}
       className={`carouselCell cI${cI} rv${rangeValue} absolute my-14`}
     >
       <Card
-        key={props.title}
+        // key={props.title}
         image={props.image}
         title={props.title}
         content={props.content}

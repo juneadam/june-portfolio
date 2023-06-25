@@ -1,6 +1,7 @@
 {
   "data": [
     {
+      "key": 0,
       "image": "https://i.imgur.com/GCL1CjC.png",
       "title": "Poetry Toolkit",
       "content": "Tools for inspiring poets! Built with Python, JavaScript, HTML, CSS, PostgreSQL, React, Flask, Jinja2, SQLAlchemy, Bootstrap, and using the PoetryDB API.",
@@ -15,6 +16,7 @@
       "etcIcon": ""
     },
     {
+      "key": 1,
       "image": "https://i.imgur.com/Ryj2G6o.png",
       "title": "BirdDex",
       "content": "A very familiar looking encyclopedia of (mostly nonfictional) birds. A collaboration with the fabulous @bethanylynn (check out her Github)!",
@@ -29,6 +31,7 @@
       "etcIcon": "fa-brands fa-github"
     },
     {
+      "key": 2,
       "image": "https://i.imgur.com/TCbFvYt.png",
       "title": "Silverstone Contracting",
       "content": "A playful and colorful website for a small business in California. Python/Flask, HTML, CSS. Mobile-first design. Built and designed in collaboration with the wonderful @dr-acc (check out her GitHub)!",
@@ -43,6 +46,7 @@
       "etcIcon": "fa-brands fa-github"
     },
     {
+      "key": 3,
       "image": "https://i.imgur.com/v8FMbg3.png",
       "title": "Empower Counseling",
       "content": "(Still under construction!) A clean and inviting design for a private practice in Tennessee. Python/Flask, HTML, CSS. Mobile-first design. Built and designed with the talented @alexray113 (Check out their GitHub)!",
@@ -57,6 +61,7 @@
       "etcIcon": "fa-brands fa-github"
     },
     {
+      "key": 4,
       "image": "https://i.imgur.com/ZkiEqpJ.png",
       "title": "CSV Converter",
       "content": "A simple Python project to easily convert a CSV file into a JSON file. Front-end integration coming soon! ",
@@ -71,6 +76,7 @@
       "etcIcon": ""
     },
     {
+      "key": 5,
       "image": "https://i.imgur.com/Y7XOjwn.png",
       "title": "Weather App",
       "content": "Weather app built using the OpenWeather API. HTML, CSS, Bootstrap, JavaScript",
