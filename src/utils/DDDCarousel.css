@@ -22,7 +22,36 @@
   transform: rotateY(300deg) translateZ(259.8px);
 }
 
-.prevBtn, .nextBtn {
+@media (max-width: 768px), (max-height: 500px) {
+  .carousel {
+    scale: 0.5;
+  }
+
+  .prev {
+    right: 12rem;
+    scale: 1.5;
+  }
+  .next {
+    right: -14rem;
+    scale: 1.5;
+  }
+}
+
+@media (max-width: 500px) {
+  .prev {
+    top: 18rem;
+    right: 4rem;
+    scale: 1.5;
+  }
+  .next {
+    top: 18rem;
+    right: -5rem;
+    scale: 1.5;
+  }
+}
+
+.prevBtn,
+.nextBtn {
   animation: btnFadeIn ease-in 1s;
   animation-delay: 1s;
   animation-fill-mode: forwards;

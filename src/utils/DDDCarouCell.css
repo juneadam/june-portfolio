@@ -1,53 +1,26 @@
-@media (max-width: 768px), (max-height: 500px) {
-  .carousel {
-  scale: .5;  }
-
-  .prev {
-right: 12rem;
-scale: 1.5;
-  } 
-  .next {
-  right: -14rem;  
-  scale:1.5;
-  }
-}
-
-@media (max-width: 500px) {
-  .prev {
-    top: -18rem;
-    right: 4rem;
-    scale: 1.5;
-  }
-  .next {
-    top: -18rem;
-    right: -5rem;
-    scale: 1.5;
-  }
-}
-
 .rv0 .card-wrapper:hover {
   transform: scale(1.4);
 }
 
-@media (max-height: 1100px) {
+@media (max-height: 1100px) and (min-width: 768px) {
   .rv0 .card-wrapper:hover {
     transform: scale(1.3);
   }
 }
 
-@media (max-height: 900px) {
+@media (max-height: 900px) and (min-width: 768px)  {
   .rv0 .card-wrapper:hover {
     transform: scale(1.1);
   }
 }
 
-@media (max-height: 800px) {
+@media (max-height: 800px) and (min-width: 768px)  {
     .rv0 .card-wrapper:hover {
       transform: scale(1.05);
     }
   }
 
-  @media (max-height: 768px) {
+  @media (max-height: 768px) and (min-width: 768px)  {
     .rv0 .card-wrapper:hover {
       transform: scale(1.5);
     }
@@ -62,7 +35,7 @@ scale: 1.5;
   box-shadow: 0 0 5px 5px #02ccfe, 0 0 10px 5px #ff00ff, 0 0 15px 5px #ffffff,
     inset 0 0 100px 100px #ffffff88;
   animation-timing-function: ease-out;
-  animation-duration: 400ms;
+  animation-duration: 700ms;
   animation-name: selectGlow;
   animation-iteration-count: 1;
   animation-delay: 0ms;
