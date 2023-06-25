@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for june-portfolio-dev on 2023-06-25T07:48:50-05:00
+# fly.toml app configuration file generated for junebalter on 2023-06-25T08:04:43-05:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = "june-portfolio-dev"
+app = "junebalter"
 primary_region = "atl"
 
 [http_service]
