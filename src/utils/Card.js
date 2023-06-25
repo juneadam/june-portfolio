@@ -23,6 +23,7 @@ function Card(props) {
           key={props.title + props.deploy}
           href={props.title}
           target="_blank"
+          rel="noreferrer"
           className="transition-all duration-300 hover:scale-125 hover:text-carousel-toggle"
         >
           <button>
@@ -38,6 +39,7 @@ function Card(props) {
           key={props.title + props.linkedin}
           href={props.linkedin}
           target="_blank"
+          rel="noreferrer"
           className="transition-all duration-300 hover:scale-125 hover:text-carousel-toggle"
         >
           <button>
@@ -53,6 +55,7 @@ function Card(props) {
           key={props.title + props.github}
           href={props.github}
           target="_blank"
+          rel="noreferrer"
           className="transition-all duration-300 hover:scale-125 hover:text-carousel-toggle"
         >
           <button>
@@ -68,6 +71,7 @@ function Card(props) {
           key={props.title + props.demo}
           href={props.demo}
           target="_blank"
+          rel="noreferrer"
           className="transition-all duration-300 hover:scale-125 hover:text-carousel-toggle"
         >
           <button>
@@ -83,6 +87,7 @@ function Card(props) {
           key={props.title + props.etc}
           href={props.etcLink}
           target="_blank"
+          rel="noreferrer"
           className="transition-all duration-300 hover:scale-125 hover:text-carousel-toggle"
         >
           <button>

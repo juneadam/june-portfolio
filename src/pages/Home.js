@@ -1,4 +1,4 @@
-import Accordion from "../utils/Accordion";
+// import Accordion from "../utils/Accordion";
 import Portrait from "../utils/Portrait";
 import Blurb from "../utils/Blurb";
 import "./Home.css";

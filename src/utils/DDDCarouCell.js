@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+
 import Card from "./Card";
 import "./DDDCarouCell.css";
 
@@ -23,14 +23,14 @@ function useRangeValue(cellIndex, selectedIndex, arrayLength) {
   }
   let rangeValue = 99; //the value (+ or -) from 0 - arrayLength, tracking a particular face
 
-  if (cI == faceIndex) {
+  if (cI === faceIndex) {
     rangeValue = 0;
     //front-facing card is the current rendered card
-  } else if (cI == faceIndex + arrayLength - 1) {
+  } else if (cI === faceIndex + arrayLength - 1) {
     rangeValue = -1;
-  } else if (faceIndex == cI + arrayLength - 1) {
+  } else if (faceIndex === cI + arrayLength - 1) {
     rangeValue = 1;
-  } else if (Math.abs(cI - faceIndex) == arrayLength / 2) {
+  } else if (Math.abs(cI - faceIndex) === arrayLength / 2) {
     rangeValue = arrayLength / 2;
     //when there are an even number of cards,
     //this is the opposite card from the front-facing card
