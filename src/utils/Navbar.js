@@ -38,7 +38,7 @@ function Navbar(props) {
       <Link to="/contact">
         <NavIcon type="contact" icon="fa-solid fa-envelope" size="2xl" textSize="text-xl" hide={hide} />
       </Link>
-      <div className="social-hole flex place-content-evenly ">
+      <div className="social-hole flex flex-col md:flex-row md:place-content-evenly ">
         {/* self-center and w-56 make the social links static on stretch - do i like this better? 
         or is it more fun when they stretch with the bar? */}
         <a href="https://www.github.com/juneadam" target="_blank" rel="noreferrer">

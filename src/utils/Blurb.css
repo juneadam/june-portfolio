@@ -29,3 +29,11 @@
     }
 }
 
+@media (max-width: 768px) {
+  #para-two {
+    display:none;
+  }
+  .techs-found {
+    justify-content: center;
+  }
+}

@@ -45,3 +45,24 @@
     stroke-dashoffset: -100;
   }
 }
+
+@media (max-width: 768px) {
+  .home-name-hole {
+    height: 20vh;
+  }
+  .home-portrait-hole {
+    height: 30vh
+  }
+  .svg-corner-right {
+    height: 25vh;
+    width: 25vh;
+    position:relative;
+    top: 75%;
+    justify-self: center;
+    align-items: center;
+  }
+  .home-blurb-hole {
+    height: 25vh;
+    text-align: center;
+  }
+}
