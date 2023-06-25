@@ -22,13 +22,13 @@
   transform: rotateY(300deg) translateZ(259.8px);
 }
 
-.prevBtn {
+/* .prevBtn {
   text-shadow: 5px 5px 0px darkturquoise;
 }
 
 .nextBtn {
   background-image: radial-gradient(circle at center, #67e8f9 0, #EC4899 100%);
-}
+} */
 
 .prevBtn, .nextBtn {
   animation: btnFadeIn ease-in 1s;

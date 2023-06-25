@@ -30,12 +30,6 @@ function DDDCarousel() {
 
   const [selectedIndex, setSelectedIndex] = useState(0);
 
-  // for (const pro of projects) {
-  //   console.log(
-  //     `key: ${pro.key} image: ${pro.image} title: ${pro.title} content: ${pro.content}`
-  //   );
-  // }
-
   if (projects.length === 0) {
     return <div>Loading...</div>;
   }
@@ -86,14 +80,14 @@ function DDDCarousel() {
           <FontAwesomeIcon
             icon="fa-solid fa-circle-left"
             size="2xl"
-            className="prevBtn transition-all hover:ease-in-out duration-700 hover:shadow-hover-card"
+            className="prevBtn rounded-full transition-all duration-700 hover:ease-in-out hover:shadow-hover-carousel-toggle hover:bg-carousel-toggle hover:text-teal-200 hover:scale-150"
           />
         </button>
         <button className="absolute -right-96" onClick={Next}>
           <FontAwesomeIcon
             icon="fa-solid fa-circle-right fa-pull-right"
             size="2xl"
-            className="nextBtn transition-all rounded-full hover:ease-in-out duration-300 bg-clip-text hover:text-transparent hover:shadow-hover-carousel-toggle"
+            className="nextBtn rounded-full transition-all duration-700 hover:ease-in-out hover:shadow-hover-carousel-toggle hover:bg-carousel-toggle hover:text-teal-200 hover:scale-150"
           />
         </button>
       </div>

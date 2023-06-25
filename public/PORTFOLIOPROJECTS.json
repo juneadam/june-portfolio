@@ -2,11 +2,11 @@
   "data": [
     {
       "key": 0,
-      "image": "/aiony-haust-3TLl_97HNJo-unsplash.jpg",
-      "title": "Placeholder Title 1",
+      "image": "https://i.imgur.com/J1ZyURF.png",
+      "title": "Poetry Toolkit",
       "content": "content",
-      "github": "https://www.github.com/juneadam",
-      "deploy": ""
+      "github": "https://www.github.com/juneadam/poetry-app",
+      "deploy": "http://3.88.39.80/"
     },
     {
       "key": 1,
