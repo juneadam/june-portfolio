@@ -65,7 +65,7 @@ function App() {
   const { wide, wideOnMouse } = useNavbar();
 
   return (
-    <div className="App flex flex-row">
+    <div className="App flex flex-row overflow-hidden">
       <Navbar wide={wide} wideOnMouse={wideOnMouse} />
       <Routes>
         <Route

@@ -1,5 +1,5 @@
 import DDDCarouCell from "./DDDCarouCell";
-import "./DDDCarousel.scss";
+import "./DDDCarousel.css";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -30,11 +30,11 @@ function DDDCarousel() {
 
   const [selectedIndex, setSelectedIndex] = useState(0);
 
-  for (const pro of projects) {
-    console.log(
-      `key: ${pro.key} image: ${pro.image} title: ${pro.title} content: ${pro.content}`
-    );
-  }
+  // for (const pro of projects) {
+  //   console.log(
+  //     `key: ${pro.key} image: ${pro.image} title: ${pro.title} content: ${pro.content}`
+  //   );
+  // }
 
   if (projects.length === 0) {
     return <div>Loading...</div>;
@@ -80,10 +80,10 @@ function DDDCarousel() {
       </div>
       <div className="relative carousel-button-hole">
         <button className="absolute right-96" onClick={Prev}>
-          <FontAwesomeIcon icon="fa-solid fa-circle-left" size="2xl" className="prevBtn transition-all hover:ease-in-out duration-700 hover:shadow-hover-card" />
+          <FontAwesomeIcon icon="fa-solid fa-circle-left" size="2xl" className="prevBtn btn-ani transition-all hover:ease-in-out duration-700 hover:shadow-hover-card" />
         </button>
         <button className="absolute -right-96" onClick={Next}>
-          <FontAwesomeIcon icon="fa-solid fa-circle-right fa-pull-right" size="2xl" className="nextBtn transition-all rounded-full hover:ease-in-out duration-300 bg-clip-text hover:text-transparent hover:shadow-hover-carousel-toggle" />
+          <FontAwesomeIcon icon="fa-solid fa-circle-right fa-pull-right" size="2xl" className="nextBtn btn-ani transition-all rounded-full hover:ease-in-out duration-300 bg-clip-text hover:text-transparent hover:shadow-hover-carousel-toggle" />
         </button>
       </div>
     </>
