@@ -54,10 +54,6 @@ function DDDCarouCell(props) {
     props.arrayLength
   );
 
-  useEffect(() => {});
-
-  console.log(props.cellIndex)
-
   return (
     <div
       id={props.cellIndex}

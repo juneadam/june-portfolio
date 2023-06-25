@@ -31,6 +31,20 @@ function Card(props) {
       )
     : void 0;
 
+  props.linkedin
+    ? buttonArray.push(
+        <a
+          href={props.linkedin}
+          target="_blank"
+          className="transition-all duration-300 hover:scale-125 hover:text-carousel-toggle"
+        >
+          <button>
+            <FontAwesomeIcon icon={props.linkedinIcon} /> LinkedIn
+          </button>
+        </a>
+      )
+    : void 0;
+
   props.github
     ? buttonArray.push(
         <a
@@ -75,7 +89,7 @@ function Card(props) {
     : void 0;
 
   return (
-    <div className="card-wrapper relative mx-3 grid-cols-1 grid-rows-3 min-w-[250px] max-w-[500px] h-2/3 rounded-md border border-black transition-all hover:ease-in-out duration-700 hover:shadow-hover-card">
+    <div className="card-wrapper relative mx-3 grid-cols-1 grid-rows-3 min-w-[250px] max-w-[500px] h-3/5 rounded-md border border-black transition-all hover:ease-in-out duration-700 hover:shadow-hover-card">
       <div className="card-image-div h-1/2 min-h-fill overflow-hidden rounded-t-md row-span-1 grid place-content-center">
         <img
           className="object-cover"
@@ -83,13 +97,13 @@ function Card(props) {
           alt="card-portrait"
         ></img>
       </div>
-      <div className="card-content border-y border-black px-6 pb-3 h-1/4 bg-lime-200/90">
-        <h1 className="text-2xl md:text-3xl text-right font-semibold py-4">
+      <div className="card-content border-y px-6 pb-6 min-h-fit h-1/4 border-black bg-lime-200/90">
+        <h1 className="text-xl text-right font-semibold py-4">
           {props.title}
         </h1>
-        <p className="py-1 text-sm text-right">{props.content}</p>
+        <p className="py-1 text-sm pb-3 text-right">{props.content}</p>
       </div>
-      <div className="card-links px-6 py-3 h-1/4 bg-lime-200/90 flex flex-wrap flex-col justify-around items-end rounded-b-md">
+      <div className="card-links px-6 py-3 min-h-fit h-1/4 bg-lime-200/90 flex flex-wrap flex-col justify-around items-end rounded-b-md">
         {buttonArray}
       </div>
       <div className="shader absolute inset-0 rounded-md pointer-events-none"></div>
