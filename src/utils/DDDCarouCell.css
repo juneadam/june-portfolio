@@ -1,22 +1,45 @@
 .rv0 .card-wrapper .shader {
-    opacity: .25;
-    background:linear-gradient(45deg, #00000000, #ffffffB3)
+  opacity: 0.75;
+  background: linear-gradient(45deg, #00000000, #ffffff88);
+}
+
+.rv0 .card-wrapper .select-glow {
+  background-color: #f97068;
+  box-shadow: 0 0 5px 5px #f97068, 0 0 10px 5px #ff00ff, 0 0 15px 5px #ffffff,
+    inset 0 0 100px 100px #ffffff88;
+  animation-timing-function: ease-out;
+  animation-duration: 800ms;
+  animation-name: selectGlow;
+  animation-iteration-count: 1;
+  animation-delay: 0ms;
+  animation-fill-mode: both;
+}
+
+@keyframes selectGlow {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .rv1 .card-wrapper .shader {
- opacity: .75;
- background:linear-gradient(45deg, #00000000, #ffffff)
+  opacity: 0.75;
+  background: linear-gradient(45deg, #00000000, #ffffff);
 }
 
 .rv-1 .card-wrapper .shader {
-    opacity: .75;
-    background:linear-gradient(45deg, #000000D4, #ffffff00)
-   }
+  opacity: 0.75;
+  background: linear-gradient(45deg, #000000d4, #ffffff00);
+}
 
 .rv-2 .card-wrapper .shader,
 .rv2 .card-wrapper .shader,
 .rv3 .card-wrapper .shader {
-    z-index: 0;
-    background-color: rgba(31, 31, 31, 0.8);
+  z-index: 0;
+  background-color: rgba(31, 31, 31, 0.8);
 }
-  
