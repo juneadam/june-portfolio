@@ -1,0 +1,8 @@
+.icon-hole:hover .faIcon {
+    transform: translateY(-.375em);
+  }
+
+button:focus .nav-text {
+    visibility: visible;
+    color: rgb(203 213 225)
+}
