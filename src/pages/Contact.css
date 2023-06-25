@@ -12,3 +12,7 @@
     opacity: 1;
   }
 }
+
+.Contact .card-wrapper .card-image-div img {
+  filter:grayscale(1)
+}

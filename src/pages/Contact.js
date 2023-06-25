@@ -5,7 +5,8 @@ function Contact() {
   return (
     <div className="Contact w-screen h-screen flex flex-auto justify-center items-center">
       <Card
-        image="/aiony-haust-3TLl_97HNJo-unsplash.jpg"
+        key="contactCard"
+        image="june.jpg"
         title="June Balter"
         content="lorem ipsum tootie frutti"
       />
