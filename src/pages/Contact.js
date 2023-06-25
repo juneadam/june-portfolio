@@ -13,7 +13,7 @@ function Contact() {
         githubIcon="fa-brands fa-github"
         linkedin="https://linkedin.com/in/june-balter"
         linkedinIcon="fa-brands fa-linkedin"
-        etc=" junedoeswork (@) gmail (.) com"
+        etc=" Email"
         etcLink="mailto:junedoeswork@gmail.com"
         etcIcon="fa-solid fa-envelope"
       />

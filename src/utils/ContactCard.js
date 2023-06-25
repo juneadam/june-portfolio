@@ -1,21 +1,12 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function ContactCard(props) {
-  // rV is range value for the carousel component,
-  // not needed in other uses
-
-  let rV = "";
-  props.rV ? (rV = props.rV) : void 0;
 
   // button array checks for links that might have been imported
   // from the json file for the particular entry and creates
   // appropriate buttons as needed
 
   let buttonArray = [];
-
-  // console.log(
-  //   `deploy : ${props.deploy} github : ${props.github} demo : ${props.deploy}`
-  // );
 
   props.deploy
     ? buttonArray.push(
@@ -118,7 +109,6 @@ function ContactCard(props) {
       </div>
       <div className="shader absolute inset-0 rounded-md pointer-events-none"></div>
       <div
-        key={rV}
         className="select-glow absolute inset-0 pointer-events-none"
       ></div>
     </div>
