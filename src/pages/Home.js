@@ -15,7 +15,7 @@ function Home(props) {
           Full Stack Software Engineer
         </h2>
       </div>
-      <div className="home-portrait-hole md:col-span-4 col-span-12 row-span-1 grid justify-items-center place-items-center">
+      <div className="home-portrait-hole md:mt-10 md:col-span-4 col-span-12 row-span-1 grid justify-items-center place-items-center">
         <Portrait image="june3.jpg" />
       </div>
       <div className="svg-corner-right col-span-12 md:col-span-2 row-span-1 grid md:justify-items-center md:place-items-center">

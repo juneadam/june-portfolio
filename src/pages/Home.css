@@ -58,6 +58,7 @@
     width: 25vh;
     position:relative;
     top: 75%;
+    right: 3%;
     justify-self: center;
     align-items: center;
   }
