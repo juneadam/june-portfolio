@@ -20,7 +20,7 @@
   }
 }
 
-@media (max-height: 768px) and (min-width: 768px) {
+@media (max-height: 480px) and (min-width: 768px) {
   .rv0 .card-wrapper:hover {
     transform: scale(1.5);
   }
