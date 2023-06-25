@@ -1,5 +1,5 @@
 import ContactCard from "../utils/ContactCard";
-import "./Contact.css"
+import "./Contact.css";
 
 function Contact() {
   return (

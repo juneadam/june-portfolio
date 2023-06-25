@@ -16,36 +16,36 @@
   } */
 
 .Portrait img {
-    filter:saturate(0);
-    transition-duration: 1s;
-    transition-timing-function: ease-in-out;
+  filter: saturate(0);
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
 }
 
 .Portrait img:hover {
-    cursor: pointer;
-    filter:saturate(100);
-    transition-duration: 30s;
-    transition-timing-function:ease-in-out ;
+  cursor: pointer;
+  filter: saturate(100);
+  transition-duration: 30s;
+  transition-timing-function: ease-in-out;
 }
 
 .shadow-ani {
-    box-shadow: 5px 5px 10px black;
+  box-shadow: 5px 5px 10px black;
 }
 
 .shadow-ani:hover {
-    animation: longShadow ease-in-out 30s;
-    animation-iteration-count: 1;
-    animation-fill-mode:forwards;
+  animation: longShadow ease-in-out 30s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 @keyframes longShadow {
-    0% {
-        box-shadow: 5px 5px 10px black
-    }
-    60% {
-        box-shadow: 15px 40px 35px grey;
-    }
-    100% {
-        box-shadow: 30px 90x 60px red;
-    }
+  0% {
+    box-shadow: 5px 5px 10px black;
+  }
+  60% {
+    box-shadow: 15px 40px 35px grey;
+  }
+  100% {
+    box-shadow: 30px 90x 60px red;
+  }
 }

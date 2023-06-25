@@ -85,14 +85,20 @@ function DDDCarousel() {
         })}
       </div>
       <div className="relative carousel-button-hole">
-        <button className="prev absolute lg:right-96 right-40 md:right-72" onClick={Prev}>
+        <button
+          className="prev absolute lg:right-96 right-40 md:right-72"
+          onClick={Prev}
+        >
           <FontAwesomeIcon
             icon="fa-solid fa-circle-left"
             size="2xl"
             className="prevBtn rounded-full transition-all duration-700 hover:ease-in-out hover:shadow-hover-carousel-toggle hover:bg-carousel-toggle hover:text-teal-200 hover:scale-150"
           />
         </button>
-        <button className="next absolute lg:-right-96 -right-48 md:-right-80" onClick={Next}>
+        <button
+          className="next absolute lg:-right-96 -right-48 md:-right-80"
+          onClick={Next}
+        >
           <FontAwesomeIcon
             icon="fa-solid fa-circle-right fa-pull-right"
             size="2xl"

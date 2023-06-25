@@ -37,7 +37,9 @@ function useTechs() {
   const techsFound = [];
   for (const obj of technologies) {
     // console.log(`technologies key: ${obj["Language"]}`);
-    techsFound.push(<TechBtn key={obj["Language"]} language={obj["Language"]} />);
+    techsFound.push(
+      <TechBtn key={obj["Language"]} language={obj["Language"]} />
+    );
   }
 
   return {

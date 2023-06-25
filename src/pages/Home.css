@@ -16,7 +16,7 @@
 .animated-line {
   stroke-dasharray: 100;
   stroke-dashoffset: 100;
-  stroke-linecap:round;
+  stroke-linecap: round;
   animation: dashIn 8s ease-in-out infinite;
 }
 
@@ -32,7 +32,7 @@
 .delay-line {
   stroke-dasharray: 100;
   stroke-dashoffset: 100;
-  stroke-linecap:round;
+  stroke-linecap: round;
   animation: dashInDelay 8s ease-in-out infinite;
   animation-delay: 550ms;
 }
@@ -51,12 +51,12 @@
     height: 20vh;
   }
   .home-portrait-hole {
-    height: 30vh
+    height: 30vh;
   }
   .svg-corner-right {
     height: 25vh;
     width: 25vh;
-    position:relative;
+    position: relative;
     top: 75%;
     right: 3%;
     justify-self: center;

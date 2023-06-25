@@ -7,31 +7,36 @@
 } */
 
 .blurb-glow:hover {
-    cursor:pointer;
-    animation: blurbGlow ease-in 4s;
-    animation-iteration-count: infinite;
-    /* animation-fill-mode: i; */
+  cursor: pointer;
+  animation: blurbGlow ease-in 4s;
+  animation-iteration-count: infinite;
+  /* animation-fill-mode: i; */
 }
 
 @keyframes blurbGlow {
-    0% {box-shadow: none}
-    15% {
-        box-shadow: 0 0 5px 5px #ec4899e6, 0 0 8px 12px #ff00ffB3, 0 0 14px 10px #02ccfe, 0 0 18px 4px #ffffff, inset 0 0 5px 5px #ec4899e6;
-    }
-    25% {
-        box-shadow: 0 0 2px 5px #ec4899e6, 0 0 4px 8px #ff00ffB3, 0 0 5px 14px #02ccfe, 0 0 5px 18px #ffffff, inset 0 0 5px 5px #ec4899e6;
-    }
-    75% {
-        box-shadow: 0 0 5px 5px #ec4899e6, 0 0 8px 12px #ff00ffB3, 0 0 14px 10px #02ccfe, 0 0 18px 4px #ffffff, inset 0 0 5px 5px #ec4899e6;
-    }
-    100% {
-        box-shadow: none;
-    }
+  0% {
+    box-shadow: none;
+  }
+  15% {
+    box-shadow: 0 0 5px 5px #ec4899e6, 0 0 8px 12px #ff00ffb3,
+      0 0 14px 10px #02ccfe, 0 0 18px 4px #ffffff, inset 0 0 5px 5px #ec4899e6;
+  }
+  25% {
+    box-shadow: 0 0 2px 5px #ec4899e6, 0 0 4px 8px #ff00ffb3,
+      0 0 5px 14px #02ccfe, 0 0 5px 18px #ffffff, inset 0 0 5px 5px #ec4899e6;
+  }
+  75% {
+    box-shadow: 0 0 5px 5px #ec4899e6, 0 0 8px 12px #ff00ffb3,
+      0 0 14px 10px #02ccfe, 0 0 18px 4px #ffffff, inset 0 0 5px 5px #ec4899e6;
+  }
+  100% {
+    box-shadow: none;
+  }
 }
 
 @media (max-width: 768px) {
   #para-two {
-    display:none;
+    display: none;
   }
   .techs-found {
     justify-content: center;

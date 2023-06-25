@@ -14,9 +14,9 @@
 }
 
 .Contact .card-wrapper:hover {
-  transform: scale(1.4)
+  transform: scale(1.4);
 }
 
 .Contact .card-wrapper .card-image-div img {
-  filter:grayscale(1)
+  filter: grayscale(1);
 }

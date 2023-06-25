@@ -10,7 +10,9 @@ function Home(props) {
 
       {/* <div className="top-right-left hidden md:visible md:col-span-1"></div> */}
       <div className="home-name-hole grid md:justify-start justify-center md:text-start text-center content-center md:col-span-6 col-span-12 row-span-1">
-        <h1 className="text-slate-300 text-3xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold">June Balter</h1>
+        <h1 className="text-slate-300 text-3xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold">
+          June Balter
+        </h1>
         <h2 className="text-slate-300 text-lg sm:text-2xl lg:text-3xl xl:text-4xl font-bold">
           Full Stack Software Engineer
         </h2>
@@ -54,7 +56,7 @@ function Home(props) {
 
       <div className="bottom-left-corner hidden md:visible col-span-3 row-span-1 md:grid md:justify-items-center md:place-items-center">
         <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-        <line
+          <line
             className="delay-line"
             x1="50"
             y1="15"

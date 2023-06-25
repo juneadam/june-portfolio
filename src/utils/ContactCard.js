@@ -1,7 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function ContactCard(props) {
-
   // button array checks for links that might have been imported
   // from the json file for the particular entry and creates
   // appropriate buttons as needed
@@ -102,15 +101,15 @@ function ContactCard(props) {
         <h1 className="text-2xl 2xl:text-4xl text-right font-semibold py-1 lg:py-4">
           {props.title}
         </h1>
-        <p className="lg:py-1 text-xs 2xl:text-lg text-right">{props.content}</p>
+        <p className="lg:py-1 text-xs 2xl:text-lg text-right">
+          {props.content}
+        </p>
       </div>
       <div className="card-links text-sm 2xl:text-lg px-6 py-3 min-h-fit h-1/4 bg-lime-200/90 flex flex-wrap flex-col justify-around items-end rounded-b-md">
         {buttonArray}
       </div>
       <div className="shader absolute inset-0 rounded-md pointer-events-none"></div>
-      <div
-        className="select-glow absolute inset-0 pointer-events-none"
-      ></div>
+      <div className="select-glow absolute inset-0 pointer-events-none"></div>
     </div>
   );
 }

@@ -4,7 +4,12 @@ import "./index.css";
 import App from "./App";
 // import reportWebVitals from "./reportWebVitals";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faLinkedin, faGithub, faYoutube, fab } from "@fortawesome/free-brands-svg-icons";
+import {
+  faLinkedin,
+  faGithub,
+  faYoutube,
+  fab,
+} from "@fortawesome/free-brands-svg-icons";
 import {
   faHouse,
   faEnvelope,
@@ -15,7 +20,7 @@ import {
   faCircleLeft,
   faPen,
   faKiwiBird,
-  faCloudSunRain
+  faCloudSunRain,
 } from "@fortawesome/free-solid-svg-icons";
 import { BrowserRouter } from "react-router-dom";
 
@@ -27,7 +32,7 @@ library.add(
   faRocket,
   faCircleInfo,
   faCircleRight,
-  faCircleLeft,  
+  faCircleLeft,
   faPen,
   faKiwiBird,
   faCloudSunRain,
@@ -44,7 +49,7 @@ root.render(
       <App />
     </BrowserRouter>
   </React.StrictMode>
-)
+);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

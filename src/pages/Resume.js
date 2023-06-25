@@ -1,4 +1,4 @@
-import "./Resume.css"
+import "./Resume.css";
 
 function Resume() {
   let width = "";
@@ -20,7 +20,7 @@ function Resume() {
     <div className="Resume overflow-hidden w-screen h-screen flex flex-row justify-evenly">
       <iframe
         title="embedded-resume"
-        src="https://drive.google.com/file/d/1ar8juYpGL5qp5n29QzuutDF2DYo78fX5/preview"
+        src="https://drive.google.com/file/d/1l_8JuHCPAjeU-oERekfrMshXVW5XLDsZ/preview"
         width={width}
         height={height}
         allow="autoplay"

@@ -1,10 +1,9 @@
 //component for homepage icons
 
-import "./NavIcon.css"
+import "./NavIcon.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-function NavIcon(props) { 
-
+function NavIcon(props) {
   return (
     <button
       key={props.type}
@@ -17,7 +16,7 @@ function NavIcon(props) {
         style={{ color: "#aae3ff" }}
       />
       <div
-        className= {`nav-text text-xs md:${props.textSize} z-0 md:-translate-y-1.5 transition-all ease-linear font-semibold uppercase focus:text-slate-100 focus:visible`}
+        className={`nav-text text-xs md:${props.textSize} z-0 md:-translate-y-1.5 transition-all ease-linear font-semibold uppercase focus:text-slate-100 focus:visible`}
       >
         {props.type}
       </div>

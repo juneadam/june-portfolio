@@ -8,23 +8,23 @@
   }
 }
 
-@media (max-height: 900px) and (min-width: 768px)  {
+@media (max-height: 900px) and (min-width: 768px) {
   .rv0 .card-wrapper:hover {
     transform: scale(1.1);
   }
 }
 
-@media (max-height: 800px) and (min-width: 768px)  {
-    .rv0 .card-wrapper:hover {
-      transform: scale(1.05);
-    }
+@media (max-height: 800px) and (min-width: 768px) {
+  .rv0 .card-wrapper:hover {
+    transform: scale(1.05);
   }
+}
 
-  @media (max-height: 768px) and (min-width: 768px)  {
-    .rv0 .card-wrapper:hover {
-      transform: scale(1.5);
-    }
+@media (max-height: 768px) and (min-width: 768px) {
+  .rv0 .card-wrapper:hover {
+    transform: scale(1.5);
   }
+}
 
 .rv0 .card-wrapper .shader {
   visibility: hidden;
