@@ -10,8 +10,8 @@ function Home(props) {
 
       <div className="top-right-left col-span-1"></div>
       <div className="home-name-hole grid justify-start content-center col-span-5 row-span-1">
-        <h1 className="text-slate-300 text-6xl font-bold">June Balter</h1>
-        <h2 className="text-slate-300 text-2xl font-bold">
+        <h1 className="text-slate-300 text-6xl lg:text-7xl xl:text-8xl font-bold">June Balter</h1>
+        <h2 className="text-slate-300 text-2xl lg:text-3xl xl:text-4xl font-bold">
           Full Stack Software Engineer
         </h2>
       </div>

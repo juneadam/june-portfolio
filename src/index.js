@@ -14,7 +14,9 @@ import {
   faCircleInfo,
   faCircleRight,
   faCircleLeft,
-  faPen
+  faPen,
+  faKiwiBird,
+  faCloudSunRain
 } from "@fortawesome/free-solid-svg-icons";
 import { BrowserRouter } from "react-router-dom";
 
@@ -28,6 +30,8 @@ library.add(
   faCircleRight,
   faCircleLeft,  
   faPen,
+  faKiwiBird,
+  faCloudSunRain,
   faGithub,
   faLinkedin,
   faYoutube
