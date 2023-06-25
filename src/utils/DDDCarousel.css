@@ -30,7 +30,7 @@
   background-image: radial-gradient(circle at center, #67e8f9 0, #EC4899 100%);
 }
 
-.btn-ani {
+.prevBtn, .nextBtn {
   animation: btnFadeIn ease-in 1s;
   animation-delay: 1s;
   animation-fill-mode: forwards;

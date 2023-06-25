@@ -1,0 +1,22 @@
+.rv0 .card-wrapper .shader {
+    opacity: .25;
+    background:linear-gradient(45deg, #00000000, #ffffffB3)
+}
+
+.rv1 .card-wrapper .shader {
+ opacity: .75;
+ background:linear-gradient(45deg, #00000000, #ffffff)
+}
+
+.rv-1 .card-wrapper .shader {
+    opacity: .75;
+    background:linear-gradient(45deg, #000000D4, #ffffff00)
+   }
+
+.rv-2 .card-wrapper .shader,
+.rv2 .card-wrapper .shader,
+.rv3 .card-wrapper .shader {
+    z-index: 0;
+    background-color: rgba(31, 31, 31, 0.8);
+}
+  

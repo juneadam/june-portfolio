@@ -12,7 +12,7 @@ function useProjects() {
       try {
         const response = await axios.get("PORTFOLIOPROJECTS.json");
         const projectsFetched = response.data.data;
-        console.log(projectsFetched);
+        // console.log(projectsFetched);
         setProjects(projectsFetched);
       } catch (error) {
         console.error("Error fetching projects:", error);
@@ -44,7 +44,7 @@ function DDDCarousel() {
   let numberOfCells = projects.length;
 
   let tz = Math.round(cellSize / 2 / Math.tan(Math.PI / numberOfCells));
-  console.log(tz);
+  // console.log(tz);
 
   let rotateCarousel = (currentIndex) => {
     let angle = (currentIndex / numberOfCells) * -360;
@@ -70,6 +70,9 @@ function DDDCarousel() {
         {projects.map((project) => {
           return (
             <DDDCarouCell
+              arrayLength={projects.length}
+              selectedIndex={selectedIndex}
+              cellIndex={project.key}
               key={project.key}
               image={project.image}
               title={project.title}
@@ -80,10 +83,18 @@ function DDDCarousel() {
       </div>
       <div className="relative carousel-button-hole">
         <button className="absolute right-96" onClick={Prev}>
-          <FontAwesomeIcon icon="fa-solid fa-circle-left" size="2xl" className="prevBtn btn-ani transition-all hover:ease-in-out duration-700 hover:shadow-hover-card" />
+          <FontAwesomeIcon
+            icon="fa-solid fa-circle-left"
+            size="2xl"
+            className="prevBtn transition-all hover:ease-in-out duration-700 hover:shadow-hover-card"
+          />
         </button>
         <button className="absolute -right-96" onClick={Next}>
-          <FontAwesomeIcon icon="fa-solid fa-circle-right fa-pull-right" size="2xl" className="nextBtn btn-ani transition-all rounded-full hover:ease-in-out duration-300 bg-clip-text hover:text-transparent hover:shadow-hover-carousel-toggle" />
+          <FontAwesomeIcon
+            icon="fa-solid fa-circle-right fa-pull-right"
+            size="2xl"
+            className="nextBtn transition-all rounded-full hover:ease-in-out duration-300 bg-clip-text hover:text-transparent hover:shadow-hover-carousel-toggle"
+          />
         </button>
       </div>
     </>

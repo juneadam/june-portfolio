@@ -3,7 +3,7 @@
 }
 
 .carousel-bounce {
-  animation: enterBottom ease-out 1.25s;
+  animation: enterBottom ease-in-out 1.5s;
   animation-iteration-count: 1;
   animation-fill-mode: inherit;
 }
