@@ -4,11 +4,11 @@
 }
 
 .rv0 .card-wrapper .select-glow {
-  background-color: #f97068;
-  box-shadow: 0 0 5px 5px #f97068, 0 0 10px 5px #ff00ff, 0 0 15px 5px #ffffff,
+  background-color: #02ccfe;
+  box-shadow: 0 0 5px 5px #02ccfe, 0 0 10px 5px #ff00ff, 0 0 15px 5px #ffffff,
     inset 0 0 100px 100px #ffffff88;
   animation-timing-function: ease-out;
-  animation-duration: 800ms;
+  animation-duration: 400ms;
   animation-name: selectGlow;
   animation-iteration-count: 1;
   animation-delay: 0ms;
