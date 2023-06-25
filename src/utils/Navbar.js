@@ -6,12 +6,6 @@ import "./Navbar.css";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Navbar(props) {
-  let barWidth = "";
-  if (props.wide === false) {
-    barWidth = "w-1/6";
-  } else {
-    barWidth = "w-1/4";
-  }
 
   let hide = "";
   if (!props.wide) {
@@ -25,7 +19,7 @@ function Navbar(props) {
 
   return (
     <div
-      className={`Navbar h-screen flex flex-col justify-evenly text-center transition-[width] ease-linear duration-500 ${barWidth}`}
+      className={`Navbar h-screen w-1/6 hover:w-1/4 flex flex-col justify-evenly text-center transition-[width] ease-linear duration-500`}
       onMouseEnter={props.wideOnMouse}
       onMouseLeave={props.wideOnMouse}
     >

@@ -60,7 +60,7 @@ function DDDCarouCell(props) {
       className={`carouselCell cI${cI} rv${rangeValue} absolute my-14`}
     >
       <Card
-        // key={props.title}
+        key={props.title}
         image={props.image}
         title={props.title}
         content={props.content}
