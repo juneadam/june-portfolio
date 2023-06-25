@@ -19,7 +19,7 @@ function Navbar(props) {
 
   return (
     <div
-      className={`Navbar z-50 h-screen w-1/6 hover:w-1/4 flex flex-col justify-evenly text-center transition-[width] ease-linear duration-500`}
+      className={`Navbar z-50 h-screen w-1/6 md:hover:w-1/4 flex flex-col justify-around md:justify-evenly text-center transition-[width] ease-linear duration-500`}
       onMouseEnter={props.wideOnMouse}
       onMouseLeave={props.wideOnMouse}
     >

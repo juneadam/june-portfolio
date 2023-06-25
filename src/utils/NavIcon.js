@@ -17,7 +17,7 @@ function NavIcon(props) {
         style={{ color: "#aae3ff" }}
       />
       <div
-        className= {`nav-text ${props.textSize} z-0 -translate-y-1.5 transition-all ease-linear font-semibold uppercase focus:text-slate-100 focus:visible`}
+        className= {`nav-text text-xs md:${props.textSize} z-0 md:-translate-y-1.5 transition-all ease-linear font-semibold uppercase focus:text-slate-100 focus:visible`}
       >
         {props.type}
       </div>
