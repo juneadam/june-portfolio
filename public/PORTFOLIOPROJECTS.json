@@ -77,18 +77,18 @@
     },
     {
       "key": 5,
-      "image": "https://i.imgur.com/Y7XOjwn.png",
-      "title": "Weather App",
-      "content": "Weather app built using the OpenWeather API. HTML, CSS, Bootstrap, JavaScript",
-      "github": "https://www.github.com/juneadam",
+      "image": "https://i.imgur.com/jhYk4iu.png",
+      "title": "Lil Bird Fly Home - Game Jam entry",
+      "content": "My first game! Built with Bethany Winter for the React Jam game jam. React, JavaScript, HTML, CSS.",
+      "github": "https://www.github.com/juneadam/gamejam",
       "githubIcon": "fa-brands fa-github",
-      "deploy": "https://www.shecodes.io/workshops/shecodes-plus-c56a88e6-9119-4d7e-9130-a5d057b6a053/projects/640611",
-      "deployIcon": "fa-solid fa-cloud-sun-rain",
+      "deploy": "",
+      "deployIcon": "",
       "demo": "",
       "demoIcon": "",
-      "etc": "",
-      "etcLink": "",
-      "etcIcon": ""
+      "etc": "Bethany's GitHub",
+      "etcLink": "https://github.com/bethany-lynn",
+      "etcIcon": "fa-brands fa-github"
     }
   ]
 }
